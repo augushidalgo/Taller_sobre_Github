@@ -4,7 +4,13 @@ using System.Text;
 
 namespace Taller_sobre_Github.Modelos
 {
-    internal class Yorleny_Obregon : Estudiante
+    public class Yorleny_Obregon : Estudiante
     {
+        public override string ComprobarAsistencia()
+        {
+            Carnet = "25501204";
+            NombreCompleto = "Yorleny Obregón";
+                return "Ha asistido a clase";
+        }
     }
 }
