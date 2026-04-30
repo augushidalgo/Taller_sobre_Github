@@ -4,7 +4,13 @@ using System.Text;
 
 namespace Taller_sobre_Github.Modelos
 {
-    internal class Ulises_Castellon : Estudiante
+    public class Ulises_Castellon : Estudiante
     {
+        public override string ComprobarAsistencia()
+        {
+            Carnet = "55416541";
+            NombreCompleto = "Ulises Mauricion Castellon Mercado";
+            return "Ha asistido a la clase";
+        }
     }
 }
