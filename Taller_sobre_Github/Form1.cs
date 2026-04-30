@@ -91,5 +91,25 @@ namespace Taller_sobre_Github
         {
             Application.Exit();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNombreCompleto_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtCarnet_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
