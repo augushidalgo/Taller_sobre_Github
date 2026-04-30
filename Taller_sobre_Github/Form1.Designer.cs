@@ -42,72 +42,87 @@
             // 
             // cbEstudiante
             // 
+            cbEstudiante.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             cbEstudiante.FormattingEnabled = true;
-            cbEstudiante.Location = new Point(155, 61);
+            cbEstudiante.Location = new Point(137, 150);
+            cbEstudiante.Margin = new Padding(3, 2, 3, 2);
             cbEstudiante.Name = "cbEstudiante";
-            cbEstudiante.Size = new Size(271, 28);
+            cbEstudiante.Size = new Size(238, 23);
             cbEstudiante.TabIndex = 0;
             cbEstudiante.SelectedIndexChanged += cbEstudiante_SelectedIndexChanged;
             // 
             // lblResultado
             // 
             lblResultado.AutoSize = true;
-            lblResultado.Location = new Point(94, 132);
+            lblResultado.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
+            lblResultado.ForeColor = SystemColors.HotTrack;
+            lblResultado.Location = new Point(569, 248);
             lblResultado.Name = "lblResultado";
-            lblResultado.Size = new Size(55, 20);
+            lblResultado.Size = new Size(44, 15);
             lblResultado.TabIndex = 1;
             lblResultado.Text = "Carnet:";
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(12, 180);
+            label1.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
+            label1.ForeColor = SystemColors.HotTrack;
+            label1.Location = new Point(137, 248);
             label1.Name = "label1";
-            label1.Size = new Size(137, 20);
+            label1.Size = new Size(109, 15);
             label1.TabIndex = 2;
             label1.Text = "Nombre Completo:";
+            label1.Click += label1_Click;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(71, 232);
+            label2.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
+            label2.ForeColor = SystemColors.HotTrack;
+            label2.Location = new Point(569, 121);
             label2.Name = "label2";
-            label2.Size = new Size(78, 20);
+            label2.Size = new Size(63, 15);
             label2.TabIndex = 3;
             label2.Text = "Asistencia:";
             // 
             // txtCarnet
             // 
             txtCarnet.BackColor = SystemColors.HighlightText;
-            txtCarnet.Location = new Point(155, 129);
+            txtCarnet.Location = new Point(569, 150);
+            txtCarnet.Margin = new Padding(3, 2, 3, 2);
             txtCarnet.Name = "txtCarnet";
             txtCarnet.ReadOnly = true;
-            txtCarnet.Size = new Size(271, 27);
+            txtCarnet.Size = new Size(238, 23);
             txtCarnet.TabIndex = 4;
+            txtCarnet.TextChanged += txtCarnet_TextChanged;
             // 
             // txtNombreCompleto
             // 
             txtNombreCompleto.BackColor = SystemColors.HighlightText;
-            txtNombreCompleto.Location = new Point(155, 177);
+            txtNombreCompleto.Location = new Point(137, 285);
+            txtNombreCompleto.Margin = new Padding(3, 2, 3, 2);
             txtNombreCompleto.Name = "txtNombreCompleto";
             txtNombreCompleto.ReadOnly = true;
-            txtNombreCompleto.Size = new Size(271, 27);
+            txtNombreCompleto.Size = new Size(238, 23);
             txtNombreCompleto.TabIndex = 5;
+            txtNombreCompleto.TextChanged += txtNombreCompleto_TextChanged;
             // 
             // txtAsistencia
             // 
             txtAsistencia.BackColor = SystemColors.HighlightText;
-            txtAsistencia.Location = new Point(155, 229);
+            txtAsistencia.Location = new Point(569, 285);
+            txtAsistencia.Margin = new Padding(3, 2, 3, 2);
             txtAsistencia.Name = "txtAsistencia";
             txtAsistencia.ReadOnly = true;
-            txtAsistencia.Size = new Size(271, 27);
+            txtAsistencia.Size = new Size(238, 23);
             txtAsistencia.TabIndex = 6;
             // 
             // button1
             // 
-            button1.Location = new Point(195, 311);
+            button1.Location = new Point(695, 498);
+            button1.Margin = new Padding(3, 2, 3, 2);
             button1.Name = "button1";
-            button1.Size = new Size(94, 29);
+            button1.Size = new Size(112, 32);
             button1.TabIndex = 7;
             button1.Text = "Salir";
             button1.UseVisualStyleBackColor = true;
@@ -116,27 +131,33 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(21, 69);
+            label3.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.ForeColor = SystemColors.Highlight;
+            label3.Location = new Point(137, 121);
             label3.Name = "label3";
-            label3.Size = new Size(128, 20);
+            label3.Size = new Size(103, 15);
             label3.TabIndex = 8;
             label3.Text = "Buscar Estudiante:";
+            label3.Click += label3_Click;
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 14F);
-            label4.Location = new Point(21, 9);
+            label4.BackColor = SystemColors.ActiveCaption;
+            label4.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label4.ForeColor = SystemColors.Info;
+            label4.Location = new Point(271, 42);
             label4.Name = "label4";
-            label4.Size = new Size(442, 32);
+            label4.Size = new Size(368, 25);
             label4.TabIndex = 9;
             label4.Text = "Control de Asistencia al Taller de GitHub";
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(485, 399);
+            BackColor = SystemColors.ActiveCaption;
+            ClientSize = new Size(964, 585);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(button1);
@@ -147,6 +168,7 @@
             Controls.Add(label1);
             Controls.Add(lblResultado);
             Controls.Add(cbEstudiante);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
