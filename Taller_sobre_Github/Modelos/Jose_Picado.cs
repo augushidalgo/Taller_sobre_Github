@@ -8,7 +8,7 @@ namespace Taller_sobre_Github.Modelos
     {
         public override string ComprobarAsistencia()
         {
-            Carnet = "87654321";
+            Carnet = "0011223344";
             NombreCompleto = "Jose Picado";
             return "Ha asistido a clase";
         }

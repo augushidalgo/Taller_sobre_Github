@@ -44,7 +44,7 @@
             // 
             cbEstudiante.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             cbEstudiante.FormattingEnabled = true;
-            cbEstudiante.Location = new Point(245, 114);
+            cbEstudiante.Location = new Point(221, 87);
             cbEstudiante.Name = "cbEstudiante";
             cbEstudiante.Size = new Size(271, 28);
             cbEstudiante.TabIndex = 0;
@@ -53,22 +53,22 @@
             // lblResultado
             // 
             lblResultado.AutoSize = true;
-            lblResultado.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
+            lblResultado.Font = new Font("Microsoft Sans Serif", 10.8F);
             lblResultado.ForeColor = SystemColors.HotTrack;
-            lblResultado.Location = new Point(169, 171);
+            lblResultado.Location = new Point(129, 142);
             lblResultado.Name = "lblResultado";
-            lblResultado.Size = new Size(58, 20);
+            lblResultado.Size = new Size(69, 22);
             lblResultado.TabIndex = 1;
             lblResultado.Text = "Carnet:";
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
+            label1.Font = new Font("Microsoft Sans Serif", 10.8F);
             label1.ForeColor = SystemColors.HotTrack;
-            label1.Location = new Point(87, 227);
+            label1.Location = new Point(47, 198);
             label1.Name = "label1";
-            label1.Size = new Size(140, 20);
+            label1.Size = new Size(159, 22);
             label1.TabIndex = 2;
             label1.Text = "Nombre Completo:";
             label1.Click += label1_Click;
@@ -76,18 +76,18 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
+            label2.Font = new Font("Microsoft Sans Serif", 10.8F);
             label2.ForeColor = SystemColors.HotTrack;
-            label2.Location = new Point(147, 283);
+            label2.Location = new Point(107, 254);
             label2.Name = "label2";
-            label2.Size = new Size(80, 20);
+            label2.Size = new Size(97, 22);
             label2.TabIndex = 3;
             label2.Text = "Asistencia:";
             // 
             // txtCarnet
             // 
             txtCarnet.BackColor = SystemColors.HighlightText;
-            txtCarnet.Location = new Point(245, 168);
+            txtCarnet.Location = new Point(221, 141);
             txtCarnet.Name = "txtCarnet";
             txtCarnet.ReadOnly = true;
             txtCarnet.Size = new Size(271, 27);
@@ -97,7 +97,7 @@
             // txtNombreCompleto
             // 
             txtNombreCompleto.BackColor = SystemColors.HighlightText;
-            txtNombreCompleto.Location = new Point(245, 224);
+            txtNombreCompleto.Location = new Point(221, 197);
             txtNombreCompleto.Name = "txtNombreCompleto";
             txtNombreCompleto.ReadOnly = true;
             txtNombreCompleto.Size = new Size(271, 27);
@@ -107,7 +107,7 @@
             // txtAsistencia
             // 
             txtAsistencia.BackColor = SystemColors.HighlightText;
-            txtAsistencia.Location = new Point(245, 280);
+            txtAsistencia.Location = new Point(221, 253);
             txtAsistencia.Name = "txtAsistencia";
             txtAsistencia.ReadOnly = true;
             txtAsistencia.Size = new Size(271, 27);
@@ -115,7 +115,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(388, 339);
+            button1.Location = new Point(205, 341);
             button1.Name = "button1";
             button1.Size = new Size(128, 43);
             button1.TabIndex = 7;
@@ -126,11 +126,11 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.ForeColor = SystemColors.Highlight;
-            label3.Location = new Point(94, 117);
+            label3.Font = new Font("Microsoft Sans Serif", 10.8F);
+            label3.ForeColor = SystemColors.HotTrack;
+            label3.Location = new Point(54, 88);
             label3.Name = "label3";
-            label3.Size = new Size(133, 20);
+            label3.Size = new Size(161, 22);
             label3.TabIndex = 8;
             label3.Text = "Buscar Estudiante:";
             label3.Click += label3_Click;
@@ -138,9 +138,9 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.BackColor = SystemColors.ActiveCaption;
+            label4.BackColor = SystemColors.Control;
             label4.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.ForeColor = SystemColors.Info;
+            label4.ForeColor = SystemColors.HotTrack;
             label4.Location = new Point(40, 26);
             label4.Name = "label4";
             label4.Size = new Size(476, 32);
@@ -152,7 +152,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Control;
-            ClientSize = new Size(544, 428);
+            ClientSize = new Size(542, 417);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(button1);
