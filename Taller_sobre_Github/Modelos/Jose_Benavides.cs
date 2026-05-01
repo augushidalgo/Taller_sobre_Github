@@ -4,7 +4,13 @@ using System.Text;
 
 namespace Taller_sobre_Github.Modelos
 {
-    internal class Jose_Benavides : Estudiante
+    public class Jose_Benavides : Estudiante
     {
+        public override string ComprobarAsistencia()
+        {
+            Carnet = "25502051";
+            NombreCompleto = "José Antonio Benavides Meléndez";
+            return "Ha asistido a clase";
+        }
     }
 }
